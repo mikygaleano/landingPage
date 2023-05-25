@@ -34,9 +34,10 @@ main {
     gap: 5rem;
 }
 
-main section:nth-child(1) {
+.container-home {
     margin: auto;
     width: 100%;
+    height: fit-content;
     display: grid;
     grid-template-columns: repeat(2, minmax(auto, 200px));
     align-items: center;
@@ -53,7 +54,7 @@ main section:nth-child(1) {
 }
 
 .conatiner-avatar {
-    width: minmax(auto, 190px);
+    width: 190px;
     height: 290px;
 }
 .conatiner-avatar img {
@@ -110,7 +111,7 @@ main section:nth-child(1) {
 
 
 @media (max-width:781px) {
-    main section:nth-child(1) {
+    .container-home {
         width: 90%;
         display: block;
         align-items: center;
