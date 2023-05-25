@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+}
+.btn-dark {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: black;
+    position: fixed;
+    bottom: 3rem;
+    right: .5rem;
+}
+.dark {
+    background-color: black;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: fit-content;
+    display: contents;
+}
+
+main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 5rem;
+}
+
+main section:nth-child(1) {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 200px));
+    align-items: center;
+    justify-content: center;
+}
+
+.container-present {
+    width: minmax(auto, 200px);
+    height: fit-content;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+.conatiner-avatar {
+    width: minmax(auto, 190px);
+    height: 290px;
+}
+.conatiner-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+}
+.container-social-media {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-social-media {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.icon-social-media a {
+    cursor: pointer;
+    width: 50px;
+    height: fit-content;
+    border-radius: 50%; 
+    padding: .5rem; 
+}
+
+.icon-social-media a:first-child {
+    background-color: blue;
+}
+.icon-social-media a:nth-child(2) {
+    background-color: grey;
+}
+.icon-social-media a:nth-child(3) {
+    background-color: cornflowerblue;
+}
+.icon-social-media a:last-child{
+    background-color: rosybrown;
+}
+
+.icon-social-media img {
+    width: 45px;
+    height: fit-content;
+    margin: 2px 2px auto;
+}
+
+
+@media (max-width:781px) {
+    main section:nth-child(1) {
+        width: 90%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .conatiner-avatar {
+        width: 100%;
+        height: fit-content;
+        display: contents;
+    }
+    .conatiner-avatar img {
+        width: 100%;
+        height: auto;
+    }
+}
